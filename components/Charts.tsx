@@ -30,7 +30,7 @@ const Charts = () => {
 		},
 		{
 			name: "May",
-			amount: "9.000",
+			amount: "$9.000",
 			height: "30",
 			ah: "43",
 		},
