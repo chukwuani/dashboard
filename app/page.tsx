@@ -13,7 +13,6 @@ export default function Home() {
 
 			<section className="flex flex-col items-start justify-center w-auto gap-5">
 				<Trends />
-
 				<Platform />
 			</section>
 		</main>

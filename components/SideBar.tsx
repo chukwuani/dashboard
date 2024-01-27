@@ -53,7 +53,7 @@ const SideBar = () => {
 						/>
 					</svg>
 
-					<p className="text-[#B2ABAB] text-sm font-medium leading-6 hidden max-md:flex">
+					<p className="text-black dark:text-white text-sm font-medium leading-6 hidden max-md:flex">
 						Dashboard
 					</p>
 

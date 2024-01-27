@@ -114,15 +114,17 @@ progress[value]::-webkit-progress-bar {
 	color: black;
 }
 
-@media (min-width: 1280px) and (max-width: 1284px) {
-	.chart-wrapper {
-		max-width: 626px;
-	}
-}
-
+/*media query to make sidebar height responsive*/
 @media screen and (min-height: 800px) {
 	.tall {
 		gap: 16px;
+	}
+}
+
+/*media queries to handle chart wrapper scrollbar overflow begins here*/
+@media (min-width: 1280px) and (max-width: 1284px) {
+	.chart-wrapper {
+		max-width: 626px;
 	}
 }
 
@@ -173,6 +175,7 @@ progress[value]::-webkit-progress-bar {
 		max-width: 100%;
 	}
 }
+/*media queries to handle chart wrapper scrollbar overflow ends here*/
 
 @media (max-width: 600px) {
 	.trends {
