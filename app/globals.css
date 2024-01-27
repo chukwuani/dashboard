@@ -2,32 +2,181 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	background-color: #fafafa;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.dark body {
+	background-color: #171717;
+}
+
+.dark * {
+	border-color: #262626;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0px 1000px black inset;
+}
+
+::placeholder {
+	color: #a3a3a3;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+img {
+	max-width: none;
+}
+
+progress[value]::-webkit-progress-bar {
+	background-color: #f5f5f5;
+	border-radius: 40px;
+	height: 12px;
+}
+
+.progress-one::-webkit-progress-value {
+	border-radius: 40px;
+	background-color: #6160dc;
+}
+
+.progress-two::-webkit-progress-value {
+	border-radius: 40px;
+	background-color: #54c5eb;
+}
+
+.progress-three::-webkit-progress-value {
+	border-radius: 40px;
+	background-color: #ffb74a;
+}
+
+.progress-four::-webkit-progress-value {
+	border-radius: 40px;
+	background-color: #ff4a55;
+}
+
+input {
+	all: unset;
+	flex: 1;
+	min-width: 0;
+	width: inherit;
+}
+
+.trends {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+
+.gradient:hover {
+	background: linear-gradient(180deg, #34caa5 0%, #34caa500 100%);
+}
+
+.indicator {
+	transition: all 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+	opacity: 0;
+}
+
+.gradient:hover ~ .indicator {
+	opacity: 1;
+}
+
+.indicator::after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	rotate: 130deg;
+	background-color: #090c2c;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50%;
+	z-index: -1;
+}
+
+.hide-scroll::-webkit-scrollbar {
+	display: none;
+}
+
+.nav-link path {
+	transition: all 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.dark .nav-link:hover path {
+	stroke: white;
+}
+
+.nav-link:hover path {
+	stroke: black;
+}
+
+@media (min-width: 1280px) and (max-width: 1284px) {
+	.chart-wrapper {
+		max-width: 626px;
+	}
+}
+
+@media (min-width: 1285px) and (max-width: 1307px) {
+	.chart-wrapper {
+		max-width: 650px;
+	}
+}
+
+@media (min-width: 1308px) and (max-width: 1320px) {
+	.chart-wrapper {
+		max-width: 660px;
+	}
+}
+
+@media (min-width: 1321px) and (max-width: 1330px) {
+	.chart-wrapper {
+		max-width: 670px;
+	}
+}
+
+@media (min-width: 1331px) and (max-width: 1340px) {
+	.chart-wrapper {
+		max-width: 680px;
+	}
+}
+
+@media (min-width: 1341px) and (max-width: 1344px) {
+	.chart-wrapper {
+		max-width: 690px;
+	}
+}
+
+@media (min-width: 1345px) and (max-width: 1350px) {
+	.chart-wrapper {
+		max-width: 700px;
+	}
+}
+
+@media (min-width: 1351px) {
+	.chart-wrapper {
+		max-width: 711px;
+	}
+}
+
+@media (min-width: 1367px) {
+	.chart-wrapper {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.trends {
+		grid-template-rows: repeat(4, 1fr);
+		grid-template-columns: 1fr;
+	}
 }
