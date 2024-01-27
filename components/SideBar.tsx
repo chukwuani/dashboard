@@ -53,7 +53,9 @@ const SideBar = () => {
 						/>
 					</svg>
 
-					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Dashboard</p>
+					<p className="text-[#B2ABAB] text-sm font-medium leading-6 hidden max-md:flex">
+						Dashboard
+					</p>
 
 					<span className="absolute right-0">
 						<svg
@@ -111,7 +113,7 @@ const SideBar = () => {
 						/>
 					</svg>
 
-					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Trends</p>
+					<p className="text-[#B2ABAB] text-sm font-medium leading-6 hidden max-md:flex">Trends</p>
 
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
@@ -169,7 +171,7 @@ const SideBar = () => {
 						/>
 					</svg>
 
-					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Profile</p>
+					<p className="text-[#B2ABAB] text-sm font-medium leading-6 hidden max-md:flex">Profile</p>
 
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
@@ -227,7 +229,9 @@ const SideBar = () => {
 						/>
 					</svg>
 
-					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Packages</p>
+					<p className="text-[#B2ABAB] text-sm font-medium leading-6 hidden max-md:flex">
+						Packages
+					</p>
 
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
@@ -292,7 +296,9 @@ const SideBar = () => {
 						/>
 					</svg>
 
-					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Discount</p>
+					<p className="text-[#B2ABAB] text-sm font-medium leading-6 hidden max-md:flex">
+						Discount
+					</p>
 
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
@@ -343,7 +349,7 @@ const SideBar = () => {
 						/>
 					</svg>
 
-					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Info</p>
+					<p className="text-[#B2ABAB] text-sm font-medium leading-6 hidden max-md:flex">Info</p>
 
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
@@ -400,7 +406,7 @@ const SideBar = () => {
 						/>
 					</svg>
 
-					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Expand</p>
+					<p className="text-[#B2ABAB] text-sm font-medium leading-6 hidden max-md:flex">Expand</p>
 
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
@@ -454,7 +460,9 @@ const SideBar = () => {
 						/>
 					</svg>
 
-					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Settings</p>
+					<p className="text-[#B2ABAB] text-sm font-medium leading-6 hidden max-md:flex">
+						Settings
+					</p>
 
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
@@ -524,7 +532,7 @@ const SideBar = () => {
 						/>
 					</svg>
 
-					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Log out</p>
+					<p className="text-[#B2ABAB] text-sm font-medium leading-6 hidden max-md:flex">Log out</p>
 
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
