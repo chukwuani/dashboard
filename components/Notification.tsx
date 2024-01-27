@@ -18,7 +18,7 @@ const Notification = () => {
 					/>
 				</button>
 			</PopoverTrigger>
-			<PopoverContent className="bg-white dark:bg-black gap-3 flex flex-col mt-[10px] mr-[10px]">
+			<PopoverContent className="bg-white dark:bg-black gap-3 flex flex-col mt-[10px] mr-[10px] rounded-[8px]">
 				<h3>Notifications</h3>
 
 				<p className="text-sm text-[#737373] dark:text-[#A3A3A3]">

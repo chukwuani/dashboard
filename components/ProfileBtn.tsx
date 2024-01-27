@@ -33,7 +33,7 @@ const ProfileBtn = () => {
 				</button>
 			</PopoverTrigger>
 
-			<PopoverContent className="bg-white dark:bg-black mt-[10px] mr-[10px]">
+			<PopoverContent className="bg-white dark:bg-black mt-[10px] mr-[10px] rounded-[8px]">
 				<section className="gap-3 flex flex-col">
 					<a
 						className="text-sm"
