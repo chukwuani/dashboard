@@ -1,21 +1,21 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
-import {
-	Sheet,
-	SheetContent,
-	SheetDescription,
-	SheetHeader,
-	SheetTitle,
-	SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import SideBar from "./SideBar";
+import Notification from "./Notification";
+import ProfileBtn from "./ProfileBtn";
 
 const MainNav = () => {
 	const [data, setData] = useState("");
+
+	const currentDate: Date = new Date();
+	const options: Intl.DateTimeFormatOptions = { year: "numeric", month: "long", day: "numeric" };
+
+	const dateFormatter: Intl.DateTimeFormat = new Intl.DateTimeFormat("en-US", options);
+	const formattedDate: string = dateFormatter.format(currentDate);
 
 	return (
 		<nav className="bg-[#FAFAFA] dark:bg-[#171717] max-w-full flex py-[18px] px-[20px] items-center justify-between border-b border-[#E5EAEF] sticky top-0 md:ml-20 z-50">
@@ -25,18 +25,36 @@ const MainNav = () => {
 
 			<Sheet>
 				<SheetTrigger className="hidden max-md:flex">
-					<Image
-						src={"/icons/logo.svg"}
-						width={40}
-						height={40}
-						alt="Logo"
-						title="Homepage"
-					/>
+					<svg
+						stroke-width="1.5"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						className="h-5 w-5">
+						<path
+							d="M3 5H11"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+						<path
+							d="M3 12H16"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+						<path
+							d="M3 19H21"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+					</svg>
 				</SheetTrigger>
 
 				<SheetContent
 					side={"left"}
-					className="border-none w-auto">
+					className="border-none w-1/2 p-0">
 					<SideBar />
 				</SheetContent>
 			</Sheet>
@@ -60,7 +78,7 @@ const MainNav = () => {
 					<input
 						value={data}
 						onChange={(e) => setData(e.target.value)}
-						className="min-w-0 bg-transparent"
+						className="border-none outline-none w-[inherit] min-w-0 bg-transparent placeholder:text-[#A3A3A3] placeholder:text-[16px] font-normal leading-6"
 						autoCorrect="off"
 						autoComplete="off"
 						spellCheck="false"
@@ -81,49 +99,13 @@ const MainNav = () => {
 					/>
 
 					<p className="text-[#26282C] dark:text-white text-[14px] font-medium leading-[22px] text-nowrap">
-						November 15, 2023
+						{formattedDate}
 					</p>
 				</section>
 
-				<button
-					className="flex p-[9px] justify-center items-center rounded-[27px] border border-[#DADDDD]"
-					type="button">
-					<Image
-						className="max-w-none dark:invert"
-						src="/icons/bell.svg"
-						alt="Bell"
-						title="Notification"
-						width={20}
-						height={20}
-					/>
-				</button>
+				<Notification />
 
-				<button
-					className="flex py-[6px] px-[8px] max-lg:p-0 justify-center items-center rounded-[28px] border border-[#DADDDD] max-lg:border-none"
-					type="button">
-					<Image
-						className="mr-2 max-lg:m-0 max-lg:w-[38px]"
-						src="/icons/avatar.svg"
-						alt="Justin's Avatar"
-						width={38}
-						height={38}
-					/>
-
-					<span className="max-lg:hidden">
-						<p className="text-[#26282C] dark:text-white font-normal">Justin Bergson</p>
-						<p className="text-[#787486] dark:text-[#A3A3A3] text-[14px] font-normal">
-							Justin@gmail.com
-						</p>
-					</span>
-
-					<Image
-						className="ml-3 max-lg:hidden dark:invert"
-						src="/icons/chevron-down.svg"
-						alt="Down Chevron"
-						width={20}
-						height={20}
-					/>
-				</button>
+				<ProfileBtn />
 			</section>
 		</nav>
 	);

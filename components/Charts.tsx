@@ -2,6 +2,14 @@
 import Image from "next/image";
 import React from "react";
 
+import {
+	Select,
+	SelectContent,
+	SelectItem,
+	SelectTrigger,
+	SelectValue,
+} from "@/components/ui/select";
+
 const Charts = () => {
 	const data = [
 		{
@@ -86,22 +94,20 @@ const Charts = () => {
 				</h3>
 
 				<section className="flex items-center justify-center gap-[10px]">
-					<p className="text-[#3A3F51] dark:text-[#A3A3A3] text-[14px] font-medium leading-[22px]">
+					<p className="text-[#3A3F51] dark:text-[#A3A3A3] text-[14px] font-medium leading-[22px] text-nowrap">
 						Sort By:
 					</p>
 
-					<button
-						className="flex items-center py-[6px] px-[12px] rounded-[20px] gap-[10px] bg-white dark:bg-black border border-[#E1DFDF] text-[#3A3F51] dark:text-white text-[12px] font-normal leading-[16px]"
-						type="button">
-						Weekly
-						<Image
-							className="dark:invert"
-							src="/icons/chevron-down.svg"
-							alt=""
-							width={18}
-							height={18}
-						/>
-					</button>
+					<Select>
+						<SelectTrigger className="flex items-center py-[6px] px-[12px] rounded-[20px] gap-[10px] bg-white dark:bg-black border border-[#E1DFDF] text-[#3A3F51] dark:text-white text-[12px] font-normal leading-[16px] h-8">
+							<SelectValue placeholder="Weekly" />
+						</SelectTrigger>
+						<SelectContent className="bg-white dark:bg-black">
+							<SelectItem value="weekly">Weekly</SelectItem>
+							<SelectItem value="monthly">Monthly</SelectItem>
+							<SelectItem value="yearly">Yearly</SelectItem>
+						</SelectContent>
+					</Select>
 				</section>
 			</section>
 

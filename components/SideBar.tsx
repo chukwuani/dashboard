@@ -5,9 +5,11 @@ import ThemeToggle from "./ThemeToggle";
 
 const SideBar = () => {
 	return (
-		<nav className="flex w-20 py-5 flex-col items-center justify-between gap-[40px] border-r border-[#EBECF2] bg-[#F7F8FA] dark:bg-black h-dvh fixed left-0 top-0 z-50  overflow-auto hide-scroll">
-			<section className="flex flex-col items-center gap-3 tall w-full">
-				<Link href="/">
+		<nav className="flex md:w-20 w-full py-5 flex-col items-center justify-between gap-[40px] border-r border-[#EBECF2] bg-[#F7F8FA] dark:bg-black h-dvh overflow-auto hide-scroll">
+			<section className="flex flex-col items-center max-md:items-start gap-3 tall w-full">
+				<Link
+					className="px-2 max-md:px-4"
+					href="/">
 					<Image
 						src={"/icons/logo.svg"}
 						width={40}
@@ -19,7 +21,7 @@ const SideBar = () => {
 
 				<Link
 					title="Dashboard"
-					className="p-2 flex w-full items-center justify-center relative"
+					className="p-2 max-md:px-4 flex w-full items-center justify-start md:justify-center relative gap-3"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -51,6 +53,8 @@ const SideBar = () => {
 						/>
 					</svg>
 
+					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Dashboard</p>
+
 					<span className="absolute right-0">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +73,7 @@ const SideBar = () => {
 
 				<Link
 					title="Trends"
-					className="p-2 flex w-full items-center justify-center relative nav-link group"
+					className="p-2 max-md:px-4 flex w-full items-center justify-start md:justify-center gap-3 relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -107,6 +111,8 @@ const SideBar = () => {
 						/>
 					</svg>
 
+					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Trends</p>
+
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +131,7 @@ const SideBar = () => {
 
 				<Link
 					title="Profile"
-					className="p-2 flex w-full items-center justify-center relative nav-link group"
+					className="p-2 max-md:px-4 gap-3 flex w-full items-center justify-start md:justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -163,6 +169,8 @@ const SideBar = () => {
 						/>
 					</svg>
 
+					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Profile</p>
+
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +189,7 @@ const SideBar = () => {
 
 				<Link
 					title="Box"
-					className="p-2 flex w-full items-center justify-center relative nav-link group"
+					className="p-2 max-md:px-4 flex w-full items-center justify-start md:justify-center gap-3 relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -219,6 +227,8 @@ const SideBar = () => {
 						/>
 					</svg>
 
+					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Packages</p>
+
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +247,7 @@ const SideBar = () => {
 
 				<Link
 					title="Discount"
-					className="p-2 flex w-full items-center justify-center relative nav-link group"
+					className="p-2 max-md:px-4 gap-3 flex w-full items-center justify-start md:justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -282,6 +292,8 @@ const SideBar = () => {
 						/>
 					</svg>
 
+					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Discount</p>
+
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -300,7 +312,7 @@ const SideBar = () => {
 
 				<Link
 					title="Info"
-					className="p-2 flex w-full items-center justify-center relative nav-link group"
+					className="p-2 max-md:px-4 gap-3 flex w-full items-center justify-start md:justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -331,6 +343,8 @@ const SideBar = () => {
 						/>
 					</svg>
 
+					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Info</p>
+
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -347,13 +361,15 @@ const SideBar = () => {
 					</span>
 				</Link>
 
-				<ThemeToggle />
+				<section className="max-md:px-4">
+					<ThemeToggle />
+				</section>
 			</section>
 
 			<section className="flex flex-col items-center gap-3 tall w-full">
 				<Link
 					title="Expand"
-					className="p-2 flex w-full items-center justify-center relative nav-link group"
+					className="p-2 max-md:px-4 gap-3 flex w-full items-center justify-start md:justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -384,6 +400,8 @@ const SideBar = () => {
 						/>
 					</svg>
 
+					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Expand</p>
+
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -402,7 +420,7 @@ const SideBar = () => {
 
 				<Link
 					title="Setting"
-					className="p-2 flex w-full items-center justify-center relative nav-link group"
+					className="p-2 max-md:px-4 gap-3 flex w-full items-center justify-start md:justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -436,6 +454,8 @@ const SideBar = () => {
 						/>
 					</svg>
 
+					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Settings</p>
+
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -454,7 +474,7 @@ const SideBar = () => {
 
 				<Link
 					title="Log Out"
-					className="p-2 flex w-full items-center justify-center relative nav-link group"
+					className="p-2 max-md:px-4 flex w-full items-center justify-start md:justify-center gap-3 relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -503,6 +523,8 @@ const SideBar = () => {
 							stroke-linejoin="round"
 						/>
 					</svg>
+
+					<p className="text-[#B2ABAB] font-medium leading-6 hidden max-md:flex">Log out</p>
 
 					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
 						<svg

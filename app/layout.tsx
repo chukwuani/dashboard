@@ -28,7 +28,7 @@ export default function RootLayout({
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange>
-					<section className="max-md:-translate-x-[200%] transition-transform duration-500 ease-in-out">
+					<section className="max-md:-translate-x-[200%] transition-transform duration-500 ease-in-out fixed left-0 top-0 z-50 ">
 						<SideBar />
 					</section>
 

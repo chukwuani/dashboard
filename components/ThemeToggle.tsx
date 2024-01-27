@@ -6,7 +6,7 @@ import Image from "next/image";
 const ThemeToggle = () => {
 	const { setTheme } = useTheme();
 	return (
-		<section className="flex flex-col p-2 items-center gap-4 rounded-[100px] bg-white dark:bg-[#171717]">
+		<section className="flex flex-col max-md:flex-row p-2 items-center gap-4 rounded-[100px] bg-white dark:bg-[#171717]">
 			<button
 				onClick={() => setTheme("light")}
 				type="button"
