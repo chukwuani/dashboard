@@ -5,8 +5,8 @@ import ThemeToggle from "./ThemeToggle";
 
 const SideBar = () => {
 	return (
-		<nav className="flex w-20 py-5 flex-col items-center justify-between gap-[216px] border-r border-[#EBECF2] bg-[#F7F8FA] dark:bg-black h-dvh fixed left-0 top-0 z-50  overflow-auto hide-scroll">
-			<section className="flex flex-col items-center gap-4 w-full">
+		<nav className="flex w-20 py-5 flex-col items-center justify-between gap-[40px] border-r border-[#EBECF2] bg-[#F7F8FA] dark:bg-black h-dvh fixed left-0 top-0 z-50  overflow-auto hide-scroll">
+			<section className="flex flex-col items-center gap-3 tall w-full">
 				<Link href="/">
 					<Image
 						src={"/icons/logo.svg"}
@@ -350,7 +350,7 @@ const SideBar = () => {
 				<ThemeToggle />
 			</section>
 
-			<section className="flex flex-col items-center gap-4 w-full">
+			<section className="flex flex-col items-center gap-3 tall w-full">
 				<Link
 					title="Expand"
 					className="p-2 flex w-full items-center justify-center relative nav-link group"

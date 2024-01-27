@@ -126,6 +126,12 @@ input {
 	}
 }
 
+@media screen and (min-height: 800px) {
+	.tall {
+		gap: 16px;
+	}
+}
+
 @media (min-width: 1285px) and (max-width: 1307px) {
 	.chart-wrapper {
 		max-width: 650px;
