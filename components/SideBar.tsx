@@ -69,7 +69,7 @@ const SideBar = () => {
 
 				<Link
 					title="Trends"
-					className="p-2 flex w-full items-center justify-center relative nav-link"
+					className="p-2 flex w-full items-center justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -106,11 +106,26 @@ const SideBar = () => {
 							stroke-linejoin="round"
 						/>
 					</svg>
+
+					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="3"
+							height="21"
+							viewBox="0 0 3 21"
+							fill="none">
+							<path
+								className="dark:fill-white"
+								d="M6.53467e-06 3.02509C7.11773e-06 1.42129 1.40951 0.182713 3 0.388889V21C1.34315 21 4.88293e-07 19.6569 1.09063e-06 18L6.53467e-06 3.02509Z"
+								fill="#0D062D"
+							/>
+						</svg>
+					</span>
 				</Link>
 
 				<Link
 					title="Profile"
-					className="p-2 flex w-full items-center justify-center relative nav-link"
+					className="p-2 flex w-full items-center justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -147,11 +162,26 @@ const SideBar = () => {
 							stroke-linejoin="round"
 						/>
 					</svg>
+
+					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="3"
+							height="21"
+							viewBox="0 0 3 21"
+							fill="none">
+							<path
+								className="dark:fill-white"
+								d="M6.53467e-06 3.02509C7.11773e-06 1.42129 1.40951 0.182713 3 0.388889V21C1.34315 21 4.88293e-07 19.6569 1.09063e-06 18L6.53467e-06 3.02509Z"
+								fill="#0D062D"
+							/>
+						</svg>
+					</span>
 				</Link>
 
 				<Link
 					title="Box"
-					className="p-2 flex w-full items-center justify-center relative nav-link"
+					className="p-2 flex w-full items-center justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -188,11 +218,26 @@ const SideBar = () => {
 							stroke-linejoin="round"
 						/>
 					</svg>
+
+					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="3"
+							height="21"
+							viewBox="0 0 3 21"
+							fill="none">
+							<path
+								className="dark:fill-white"
+								d="M6.53467e-06 3.02509C7.11773e-06 1.42129 1.40951 0.182713 3 0.388889V21C1.34315 21 4.88293e-07 19.6569 1.09063e-06 18L6.53467e-06 3.02509Z"
+								fill="#0D062D"
+							/>
+						</svg>
+					</span>
 				</Link>
 
 				<Link
 					title="Discount"
-					className="p-2 flex w-full items-center justify-center relative nav-link"
+					className="p-2 flex w-full items-center justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -236,11 +281,26 @@ const SideBar = () => {
 							stroke-linejoin="round"
 						/>
 					</svg>
+
+					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="3"
+							height="21"
+							viewBox="0 0 3 21"
+							fill="none">
+							<path
+								className="dark:fill-white"
+								d="M6.53467e-06 3.02509C7.11773e-06 1.42129 1.40951 0.182713 3 0.388889V21C1.34315 21 4.88293e-07 19.6569 1.09063e-06 18L6.53467e-06 3.02509Z"
+								fill="#0D062D"
+							/>
+						</svg>
+					</span>
 				</Link>
 
 				<Link
 					title="Info"
-					className="p-2 flex w-full items-center justify-center relative nav-link"
+					className="p-2 flex w-full items-center justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -270,6 +330,21 @@ const SideBar = () => {
 							stroke-linejoin="round"
 						/>
 					</svg>
+
+					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="3"
+							height="21"
+							viewBox="0 0 3 21"
+							fill="none">
+							<path
+								className="dark:fill-white"
+								d="M6.53467e-06 3.02509C7.11773e-06 1.42129 1.40951 0.182713 3 0.388889V21C1.34315 21 4.88293e-07 19.6569 1.09063e-06 18L6.53467e-06 3.02509Z"
+								fill="#0D062D"
+							/>
+						</svg>
+					</span>
 				</Link>
 
 				<ThemeToggle />
@@ -278,7 +353,7 @@ const SideBar = () => {
 			<section className="flex flex-col items-center gap-4 w-full">
 				<Link
 					title="Expand"
-					className="p-2 flex w-full items-center justify-center relative nav-link"
+					className="p-2 flex w-full items-center justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -308,11 +383,26 @@ const SideBar = () => {
 							stroke-linejoin="round"
 						/>
 					</svg>
+
+					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="3"
+							height="21"
+							viewBox="0 0 3 21"
+							fill="none">
+							<path
+								className="dark:fill-white"
+								d="M6.53467e-06 3.02509C7.11773e-06 1.42129 1.40951 0.182713 3 0.388889V21C1.34315 21 4.88293e-07 19.6569 1.09063e-06 18L6.53467e-06 3.02509Z"
+								fill="#0D062D"
+							/>
+						</svg>
+					</span>
 				</Link>
 
 				<Link
 					title="Setting"
-					className="p-2 flex w-full items-center justify-center relative nav-link"
+					className="p-2 flex w-full items-center justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -345,11 +435,26 @@ const SideBar = () => {
 							stroke-linejoin="round"
 						/>
 					</svg>
+
+					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="3"
+							height="21"
+							viewBox="0 0 3 21"
+							fill="none">
+							<path
+								className="dark:fill-white"
+								d="M6.53467e-06 3.02509C7.11773e-06 1.42129 1.40951 0.182713 3 0.388889V21C1.34315 21 4.88293e-07 19.6569 1.09063e-06 18L6.53467e-06 3.02509Z"
+								fill="#0D062D"
+							/>
+						</svg>
+					</span>
 				</Link>
 
 				<Link
 					title="Log Out"
-					className="p-2 flex w-full items-center justify-center relative nav-link"
+					className="p-2 flex w-full items-center justify-center relative nav-link group"
 					href="/">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -398,6 +503,21 @@ const SideBar = () => {
 							stroke-linejoin="round"
 						/>
 					</svg>
+
+					<span className="absolute right-0 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.7,0,0.3,1)] group-hover:opacity-100">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="3"
+							height="21"
+							viewBox="0 0 3 21"
+							fill="none">
+							<path
+								className="dark:fill-white"
+								d="M6.53467e-06 3.02509C7.11773e-06 1.42129 1.40951 0.182713 3 0.388889V21C1.34315 21 4.88293e-07 19.6569 1.09063e-06 18L6.53467e-06 3.02509Z"
+								fill="#0D062D"
+							/>
+						</svg>
+					</span>
 				</Link>
 			</section>
 		</nav>
